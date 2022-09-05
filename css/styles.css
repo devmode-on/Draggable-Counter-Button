@@ -1,0 +1,82 @@
+/* ------------ GOOGLE FONTS ------------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* ------------ VARIABLES ------------ */
+:root{
+  /* FONT */
+  --font: 'Poppins', sans-serif;
+
+  /* COLORS */
+  --color: #9176ff;
+}
+/* ------------ BASE ------------ */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background-color: var(--color);
+}
+
+/* ----------- BUTTON ----------- */
+.btn{
+  width: 32em;
+  height: 14em;
+  background-color: rgba(255,255,255, .3);
+  border-radius: 8em;
+  padding: 0 3.5em;
+  box-shadow: 0 0 2em rgba(0,0,0, .2);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.btn__sign{
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+
+  transition: transform .3s ease;
+}
+
+.btn__number{
+  font-size: 6rem;
+  font-weight: 600;
+  background-color: #fff;
+  width: 2.2em;
+  height: 2.2em;
+  border-radius: 50%;
+  color: var(--color);
+  cursor: pointer;
+  user-select: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  left: 1.5em;
+}
+
+.btn__number:hover{
+  cursor: grab;
+}
+
+.btn__sign:active{
+  transform: scale(.8);
+}
